@@ -11,8 +11,7 @@ const Home = () => {
           Crafting Moments, One Cup at a Time.
           </h1>
           <p className='home__description'>
-          From the first aroma to the last sip, we invite you to share in the art of crafting 
-          unforgettable memories over a cup of your favorite brew at our cozy cafe.
+          From the first aroma to the last sip,come order a cup of coffee
           </p>
 
           <div className='home__btns'>
