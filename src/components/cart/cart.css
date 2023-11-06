@@ -1,0 +1,40 @@
+.cart {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Hidden by default */
+  width: 300px;
+  height: 100%;
+  background: white;
+  box-shadow: -1px 0 7px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart.open {
+  right: 0;
+}
+
+.cart-icon {
+  background: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cart-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.cart button {
+  display: block;
+  margin: 10px 0;
+  background: #48402a;
+  color: #c7bc9f;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}

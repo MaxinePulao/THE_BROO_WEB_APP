@@ -1,0 +1,90 @@
+.testimonial__qoute {
+  background: var(--container-color);
+  padding: 2.5rem 2rem 3rem;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  position: relative;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 2px var(--first-color);
+  overflow: hidden;
+}
+
+.testimonial__qoute.clicked {
+  background-color: #242015;
+}
+
+.testimonial__qoute.clicked .testimonial__img {
+  animation: bounce 0.5s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.testimonial__qoute.clicked:hover {
+  background-color: #242015;
+}
+
+.testimonial__icon {
+  color: var(--container-color);
+  font-size: var(--big-font-size);
+  position: absolute;
+  bottom: -1.75rem;
+  left: 2.5rem;
+  z-index: 1;
+}
+
+.testimonial__content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.testimonial__img-wrapper {
+  border: 2px dashed var(--first-color);
+  padding: 0.25rem;
+  width: 80px;
+  height: 80px;
+  margin-inline: 1.25rem;
+}
+
+.testimonial__img-wrapper,
+.testimonial__img {
+  border-radius: 50%;
+  transition: border-color 0.3s;
+}
+
+.testimonial__img-wrapper:hover,
+.testimonial__qoute.clicked .testimonial__img-wrapper {
+  border-color: #f0f0f0;
+}
+
+.testimonial__title {
+  font-size: var(--larger-font-size);
+}
+
+.testimonial__rating {
+  display: flex;
+  column-gap: 0.25rem;
+  color: var(--first-color);
+  margin-top: 0.25rem;
+}
+
+.testimonial__qoute {
+  background: var(--container-color);
+  padding: 2.5rem 2rem 3rem;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+
